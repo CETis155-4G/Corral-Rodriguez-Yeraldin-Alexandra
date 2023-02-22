@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+* {
+  margin: 0; /* Establece el margen para los cuatro lados */
+  padding: 0; } /*espacio y tamaño de la letra */
+
+a {
+  color: #666;
+  text-decoration: none; }
+  a:hover {
+    color: #4FDA8C; }
+
+input {
+  font: 16px/26px "Raleway", sans-serif; }
+
+  Body {background-color: #F3F3F3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23deedeb' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23c8e6e3' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b3e0dc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%239dd9d4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2388D3CC' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.form-wrap {
+  background-color: #fff; /* Esto es para el color de fondo del cuadro de texto */
+  width: 320px;
+  margin: 3em auto; /* Establece el margen para los cuatro lados */
+  box-shadow: 0px 1px 8px #BEBEBE; /* Esto sirve para darle un tipo de efecto de sombreado al cuadro de texto*/
+  -webkit-box-shadow: 0px 1px 8px #BEBEBE;
+  -moz-box-shadow: 0px 1px 8px #BEBEBE; }
+  .form-wrap .tabs {
+    overflow: hidden; }
+    .form-wrap .tabs h3 {
+      float: left;
+      width: 50%; } /*Ancho de la tabla*/
+      .form-wrap .tabs h3 a {
+        padding: 0.5em 0; /*espacio y tamaño de la letra */
+        text-align: center; /* Esto ayuda a que el texto este alineado al centro*/
+        font-weight: 400;
+        background-color: #e6e7e8; /*Fondo blanco */
+        display: block;
+        color: #666; }
+        .form-wrap .tabs h3 a.active {
+          background-color: #fff; } /*Fondo blanco */
+  .form-wrap .tabs-content {
+    padding: 1.5em; } /*espacio y tamaño de la letra */
+    .form-wrap .tabs-content div[id$="tab-content"] {
+      display: none; } /*se organiza el contenido en formato de una tabla*/
+    .form-wrap .tabs-content .active {
+      display: block !important; } /*se organiza el contenido en formato de una tabla*/
+  .form-wrap form .input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    padding: .8em 0 10px .8em; /*espacio y tamaño de la letra */
+    border: 1px solid #CFCFCF;
+    outline: 0;
+    display: inline-block; /*se organiza el contenido en formato de una tabla*/
+    margin: 0 0 .8em 0; /* Establece el margen para los cuatro lados */
+    padding-right: 2em;
+    width: 100%; } /*Ancho de la tabla*/
+  .form-wrap form .button {
+    width: 100%; /*Ancho de la tabla*/
+    padding: .8em 0 10px .8em; /*espacio y tamaño de la letra */
+    background-color: #28A55F; /* los botones son de color verde */
+    border: none;
+    color: #fff; 
+    cursor: pointer;
+    text-transform: uppercase; }
+    .form-wrap form .button:hover {
+      background-color: #4FDA8C; }
+  .form-wrap form .checkbox {
+    visibility: hidden;
+    padding: 20px; /* tamaño de la letra */
+    margin: .5em 0 1.5em; } /* Establece el margen para los cuatro lados */
+    .form-wrap form .checkbox:checked + label:after {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1; }
+  .form-wrap form label[for] {
+    position: relative;
+    padding-left: 20px; /*espacio y tamaño de la letra */
+    cursor: pointer; }
+    .form-wrap form label[for]:before {
+      content: '';
+      position: absolute;
+      border: 1px solid #CFCFCF;
+      width: 17px;  /*Ancho de la tabla*/
+      height: 17px;/* ALtura de la tabla*/
+      top: 0px;
+      left: -14px; } /* Mover hacia la izquierda toda la tabla*/
+    .form-wrap form label[for]:after {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 9px; /*Ancho de la tabla*/
+      height: 5px; /* ALtura de la tabla*/
+      background-color: transparent; 
+      top: 4px;
+      left: -10px; /* Mover hacia la izquierda toda la tabla*/
+      border: 3px solid #28A55F;
+      border-top: none;
+      border-right: none;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .form-wrap .help-text {
+    margin-top: .6em; } /* Establece el margen para los cuatro lados */
+    .form-wrap .help-text p {
+      text-align: center; /* Esto ayuda a que el texto este alineado al centro*/
+      font-size: 14px; } /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 14 píxeles de altura */

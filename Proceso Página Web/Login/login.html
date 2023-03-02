@@ -1,14 +1,25 @@
+<!-- Se define que sera un HTML -->
 <!DOCTYPE html>
+<!-- Es para el idioma, esta en español -->
 <html lang="es">
+
+<!-- Es en el encabezado del HTML -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Links para que agarre los diseños del CSS a HTML -->
     <link rel="stylesheet" href="style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
-    <title>Login</title>
-</head>
+    <!-- Título que tendra la pestaña de la página -->
+    <title> 
+	  Login
+    </title> <!-- Cierra la etiqueta -->
+</head> <!-- Cierra la etiqueta del head -->
+	
+<!-- Inicia el cuerpo del HTML -->	
 <body>
     <!--.definición de las clases para los formularios-->
     <div class="form-wrap">
@@ -17,10 +28,13 @@
 			<h3 class="login-tab"><a href="#login-tab-content">Inicio Sesión</a></h3>
 		</div>
 
-        <!--.Contenido del formulario del login-->
+        <!-- Contenido del formulario del login-->
+	         <!-- CONTENIDO DE LA TABLA -->
 		<div class="tabs-content">
 			<div id="registro-tab-content" class="active">
+				<!-- FORMULARIO PARA EL REGISTRO -->
 				<form class="signup-form" action="" method="post">
+					<!-- DATOS QUE DEBERAN SER INGRESADOS -->
                     <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Apellido Paterno">
                     <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Apellido Materno">
                     <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Nombre(s)">
@@ -29,26 +43,32 @@
                     <input type="text" class="input" id="user_info" autocomplete="off" placeholder="Estado">
                     <input type="text" class="input" id="user_info" autocomplete="off" placeholder="Municipio">
                     <input type="tel" class="input" id="user_info" autocomplete="off" placeholder="Número">
-					<input type="submit" class="button" value="Registrarse">
+					
+		    <input type="submit" class="button" value="Registrarse">
                     <!--el submit permite iniciar el envío del formulario-->
-				</form>
+				</form> <!-- Cierra el FORMULARIO -->
 				
+		  <!-- TEXTO DE AYUDA -->
                 <div class="texto-ayuda">
+			                 <!-- Mensajes que aparecen casi al final -->
 					<p>Tú información está a salvo</p>
 					<p><a href="#">¿Necesitas ayuda?</a></p>
-				</div><!--.help-text-->
-			</div><!--.signup-tab-content-->
-
+				</div><!-- Termina la clase texto-ayuda -->
+			</div><!-- Cierra la tabla de CONTENIDO-->
+                        
+			 <!-- CONTENIDO DE LA TABLA DEL LOGIN -->
 			<div id="login-tab-content">
 				<form class="login-form" action="" method="post">
+					<!-- FORMULARIO PARA EL LOGIN -->
                     <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Correo Electronico">
                     <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Usuario">
-					<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Contraseña">
-					<input type="checkbox" class="checkbox" id="remember_me">
-					<label for="remember_me">Guardar tus datos de Inicio</label>
+		    <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Contraseña">
+		    <input type="checkbox" class="checkbox" id="remember_me">
+		    <label for="remember_me">Guardar tus datos de Inicio</label>
 
-					<input type="submit" class="button" value="Iniciar Sesión">
-				</form><!--.login-form-->
+		    <input type="submit" class="button" value="Iniciar Sesión">
+		      <!-- El submit permite iniciar el envío del formulario-->
+		</form><!-- Se cierra el formulario -->
 				<div class="texto-ayuda">
 					<p><a href="#">¿Olvidaste tu contraseña?</a></p>
 				</div><!--.help-text-->
